@@ -91,9 +91,9 @@ while not end_of_game:
     if guess not in chosen_word:
       lives -= 1
       print(stages[lives])
-    if lives == 0:
-      print('You lose')
-      break
+      if lives == 0:
+        print('You lose')
+        end_of_game = True
           
 
     #TODO-2: - If guess is not a letter in the chosen_word,
